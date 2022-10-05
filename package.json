@@ -44,6 +44,7 @@
     "js-yaml": "^4.1.0",
     "lint-staged": "^13.0.3",
     "nuxt": "npm:nuxt3@3.0.0-rc.12-27730995.2894a75",
+    "nuxt-icon": "^0.1.6",
     "nuxt-windicss": "^2.5.1",
     "pinia": "^2.0.18",
     "postcss": "8.4.14",
@@ -67,6 +68,9 @@
   },
   "dependencies": {
     "@formkit/nuxt": "^1.0.0-beta.11-db38c2b",
-    "@formkit/vue": "^1.0.0-beta.10"
+    "@formkit/vue": "^1.0.0-beta.10",
+    "@vueup/vue-quill": "^1.0.0-alpha.1",
+    "quill": "^1.3.7",
+    "vue-select": "^4.0.0-beta.5"
   }
 }

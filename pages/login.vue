@@ -152,11 +152,12 @@ definePageMeta({
 const { t } = useLang()
 const { login } = useStrapiAuth()
 
+
 const router = useRouter()
 
 const identifier = ref('')
 const password = ref('')
-const register = ref(false)
+
 
 const submitHandler = async (data, node) => {
   console.log(`login ${identifier.value} ${password.value}`)

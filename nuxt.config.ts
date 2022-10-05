@@ -60,12 +60,14 @@ export default defineNuxtConfig({
     '@nuxtjs/svg',
     '@formkit/nuxt',
     '@nuxtjs/strapi',
+    'nuxt-icon',
   ],
 
   strapi: {
     url: process.env.STRAPI_URL || 'http://127.0.0.1:1337',
     prefix: '/api',
     version: 'v4',
+    entities: ['tags'],
     cookie: {},
     cookieName: 'strapi_jwt',
   },
