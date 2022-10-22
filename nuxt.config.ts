@@ -64,10 +64,10 @@ export default defineNuxtConfig({
   ],
 
   strapi: {
-    url: process.env.STRAPI_URL || 'http://127.0.0.1:1337',
+    url: process.env.STRAPI_URL || 'http://localhost:1337',
     prefix: '/api',
     version: 'v4',
-    entities: ['tags'],
+    entities: ['tags', 'events'],
     cookie: {},
     cookieName: 'strapi_jwt',
   },

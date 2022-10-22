@@ -28,6 +28,7 @@
     }
 
   const newTag = function() {
+    state.editMode = false
     state.form = {}
     state.isOpen = true
   }
@@ -39,7 +40,7 @@
   }
 
   const deleteRow = async function (tag) {
-    
+
     if (!confirm('Are you sure you want to remove?')) return;
 
     await _delete('tags', tag.id)
@@ -93,7 +94,9 @@
           .then(resp => {
             resp.data.forEach(e=>Object.assign(e, e.attributes));  state.tags = tags.withHierarchy(resp.data); console.log(state.tags)
           })
-  
+        
+
+
   </script>
   
   <template>
@@ -114,7 +117,7 @@
 						<thead>
                             <tr class="bg-gray-100">
                                 <th style="width:35%"   class="px-4 py-2">Name</th>
-								<slot name="ha"><th class="px-4 py-2">Context</th></slot>                                
+								<slot name="ha"><th class="px-4 py-2 dark:text-white">Context</th></slot>                                
 								<slot name="hb"></slot>
 								<th style="width:7%" class="menu px-4 py-2"></th>
                             </tr>

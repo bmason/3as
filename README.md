@@ -252,4 +252,4 @@ And when Postmerge, it will run "yarn" to automatically install new dependencies
 configuration in `/path/to/.husky/post-merge`
 
 ## License
-This project is licensed under the MIT license, Copyright (c) 2022 Alfian Dwi Nugraha. For more information see the [LICENSE](LICENSE.md) file.
+This project is licensed under the MIT license, Copyright (c) 2022 Alfian Dwi Nugraha. For more information see the [LICENSE](LICENSE.md) file."evolving time tracker/planner" 
